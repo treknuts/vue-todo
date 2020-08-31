@@ -1,7 +1,5 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png" />
-    <!-- <HelloWorld msg="Welcome to Your Vue.js App" /> -->
     <h3>Shit fuck TODO list</h3>
     <ul>
       <TodoItem v-for="todoItem in todoList"
@@ -22,9 +20,9 @@ export default {
   data: function () {
         return {
           todoList: [
-            { id: 1, name: "Learn Vue" },
-            { id: 2, name: "Build cool apps" },
-            { id: 3, name: "Get wins in Fall Guys" }
+            { id: 1, title: "Learn Vue", priority: "High" },
+            { id: 2, title: "Build cool apps", priority: "Medium"},
+            { id: 3, title: "Get wins in Fall Guys", priority: "Low" }
         ]
         }
   },
